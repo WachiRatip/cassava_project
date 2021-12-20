@@ -22,11 +22,11 @@ FROM python:3.9-slim
 RUN useradd --create-home appuser
 WORKDIR /home/appuser
 
-COPY --from=builder --chown=appuser:appuser /venv /venv
+COPY --from=builder --chown=appuser:appuser /opt/venv /opt/venv
 
 USER appuser
 
-ENV PATH=/venv/bin:$PATH VIRTUAL_ENV=/venv
+ENV PATH=/opt/venv/bin:$PATH VIRTUAL_ENV=/opt/venv
 
 EXPOSE 8080
 
