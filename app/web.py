@@ -47,7 +47,7 @@ def predict(image):
 
 def main():
     # set title of app
-    st.title("Simple Image Classification Application")
+    st.title("Cassava species Image Classification Application")
     st.write("")
 
     # enable users to upload images for the model to make predictions
