@@ -21,7 +21,7 @@ steps:
   args: [
         'run', 
         'deploy', 
-        'cassavaDT', 
+        'cassava-dt',
         '--image', 
         'gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA', 
         '--region', 
