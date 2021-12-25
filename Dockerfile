@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED 1
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
   apt-get -y upgrade && \
-  #apt-get install -y --no-install-recommends gcc && \
+  apt-get install -y --no-install-recommends gcc && \
   apt-get -y clean && \
   rm -rf /var/lib/apt/lists/*
 
