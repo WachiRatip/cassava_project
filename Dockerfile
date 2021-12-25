@@ -34,6 +34,6 @@ ENV PATH=/opt/venv/bin:$PATH VIRTUAL_ENV=/opt/venv
 
 EXPOSE 8080
 
-COPY /app ./
+COPY --chown=appuser /app ./
 
 CMD streamlit run web.py --server.port=8080 --browser.serverAddress="0.0.0.0"
