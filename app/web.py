@@ -63,7 +63,7 @@ def main():
 
         # print out the top 5 prediction labels with scores
         for i in labels:
-            st.write("Prediction (index, name)", i[0], ",   Score: ", i[1], "%.")
+            st.write("Prediction (index, name)", i[0], ",   Score: ", round(i[1], 2), "%.")
 
 
 if __name__=="__main__":
