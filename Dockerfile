@@ -17,7 +17,7 @@ RUN pip install -r requirements.txt
 
 
 # final stage
-FROM python:3.9-slim
+FROM gcr.io/distroless/python3
 
 RUN useradd --create-home appuser
 WORKDIR /home/appuser
